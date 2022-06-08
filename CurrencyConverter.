@@ -1,0 +1,73 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyPM3vJRiUgUS3FeF1gG+8EJ",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/tinashekm/Business-Programming/blob/main/CurrencyConverter.\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 15,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kgLwW0N0wRtK",
+        "outputId": "a0a846c2-6cf1-4bd1-a776-0cf4b1a320a1"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is your nameT\n",
+            "Good day T\n",
+            "Which currency do you wish to convert between the United States Dollar and the Japanese YEN?USD\n",
+            "Please enter the amount that you want to convert 200\n",
+            "Please indicate by typing '1' if you wish to convert United States Dollars or '2' if you wish to covert the Japanese YEN2\n",
+            "Dear T you have 2.0 Australian Dollars\n"
+          ]
+        }
+      ],
+      "source": [
+        "name = input (\"What is your name\")\n",
+        "print (\"Good day \" + name)\n",
+        "currency = (input(\"Which currency do you wish to convert between the United States Dollar and the Japanese YEN?\"))\n",
+        "amount = int(input(\"Please enter the amount that you want to convert \"))\n",
+        "unit = int(input (\"Please indicate by typing '1' if you wish to convert United States Dollars or '2' if you wish to covert the Japanese YEN\" ))\n",
+        "\n",
+        "if unit == 1 : \n",
+        "  ConversionToUSD = (amount * (1.38))\n",
+        "  print(f\"Dear {name} you have {ConversionToUSD} Australian Dollars \")\n",
+        "if unit == 2 : \n",
+        "  ConversionToYEN = amount * (0.010)\n",
+        "  print(f'Dear {name} you have {ConversionToYEN} Australian Dollars')\n",
+        "else:\n",
+        "  print(\"Sorry, your input is invalid. Please try again.\")"
+      ]
+    }
+  ]
+}
